@@ -1,4 +1,4 @@
-pip
+pip install --upgrade pip
 joblib
 streamlit
 pillow
