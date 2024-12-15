@@ -1,0 +1,6 @@
+
+0 = Stress
+1 = Depression
+2 = Bipolar disorder
+3 = Personality disorder
+4 = Anxiety
