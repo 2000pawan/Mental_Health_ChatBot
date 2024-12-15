@@ -10,7 +10,7 @@ model = joblib.load('model.pkl')
 
 # Load Vectorizer
 
-vectorizer = joblib.load('vectorizer.pkl')
+vz= joblib.load('vz.pkl')
 
 # Load Image
 
@@ -61,7 +61,7 @@ def main():
 # Prediction Function to predict from the model
 def prediction(user_input):
     # Vectorizing the input
-    new_text_vectorized = vectorizer.transform([user_input])  # Ensure input is wrapped in a list
+    new_text_vectorized = vz.transform([user_input])  # Ensure input is wrapped in a list
     predict_proba = model.predict_proba(new_text_vectorized)  # Get the probability for each class
     
     # Define a threshold for prediction confidence
