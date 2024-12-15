@@ -1,17 +1,16 @@
 # Import Important Libraries
 
-import pickle
+import joblib
 import streamlit as st 
 from PIL import Image
-import sklearn
 
 # Load Model
 
-with open('vectorizer.pkl', 'rb') as vec_file:
-    vectorizer = pickle.load(vec_file)
+model = joblib.load('model.pkl')
 
-with open('model.pkl', 'rb') as model_file:
-    model = pickle.load(model_file)
+# Load Vectorizer
+
+vectorizer = joblib.load('vectorizer.pkl')
 
 # Load Image
 
