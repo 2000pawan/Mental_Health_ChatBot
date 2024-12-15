@@ -3,6 +3,7 @@
 import joblib
 import streamlit as st 
 from PIL import Image
+import sklearn
 
 # Load Model
 
