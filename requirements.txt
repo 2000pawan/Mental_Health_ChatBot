@@ -2,3 +2,4 @@ pip
 joblib
 streamlit
 pillow
+sklearn
