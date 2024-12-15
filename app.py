@@ -71,7 +71,7 @@ def prediction(user_input):
     predict_proba = model.predict_proba(new_text_vectorized)  # Get the probability for each class
     
     # Define a threshold for prediction confidence
-    threshold = 0.4 # Set a threshold (e.g., 50% confidence)
+    threshold = 0.5 # Set a threshold (e.g., 50% confidence)
     max_prob = max(predict_proba[0])
     
     # If the highest probability is below the threshold, return 'No mental health issue'
