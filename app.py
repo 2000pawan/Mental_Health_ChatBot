@@ -60,12 +60,17 @@ def main():
 
 # Prediction Function to predict from the model
 def prediction(user_input):
-    # Vectorizing the input
-    new_text_vectorized = vz.transform([user_input])  # Ensure input is wrapped in a list
+    # Ensure that vz is a vectorizer (like TfidfVectorizer or CountVectorizer)
+    if hasattr(vz, 'transform'):  # Check if it's a vectorizer
+        new_text_vectorized = vz.transform([user_input])  # Transform input
+    else:
+        st.error("Vectorizer is not loaded properly. Please check the 'vz.pkl' file.")
+        return "Error"
+    
     predict_proba = model.predict_proba(new_text_vectorized)  # Get the probability for each class
     
     # Define a threshold for prediction confidence
-    threshold = 0.5  # Set a threshold (e.g., 20% confidence)
+    threshold = 0.5  # Set a threshold (e.g., 50% confidence)
     max_prob = max(predict_proba[0])
     
     # If the highest probability is below the threshold, return 'No mental health issue'
@@ -88,7 +93,7 @@ def prediction(user_input):
         return "Anxiety"
     else:
         return "NO"
-    
+
 # Process the prediction and format response
 def process_prediction(prediction):
     if prediction == "Stress":
