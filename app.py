@@ -6,11 +6,11 @@ from PIL import Image
 
 # Load Model
 
-model = joblib.load('model.joblib')
+model = joblib.load('model.pkl')
 
 # Load Vectorizer
 
-vectorizer = joblib.load('vectorizer.joblib')
+vectorizer = joblib.load('vectorizer.pkl')
 
 # Load Image
 
