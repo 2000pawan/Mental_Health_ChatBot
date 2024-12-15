@@ -10,7 +10,7 @@ model = joblib.load('model.pkl')
 
 # Load Vectorizer
 
-vz= joblib.load('vz.joblib')
+cv= joblib.load('cv.joblib')
 
 # Load Image
 
@@ -62,8 +62,8 @@ def main():
 def prediction(user_input):
     input=[user_input]
     # Ensure that vz is a vectorizer (like TfidfVectorizer or CountVectorizer)
-    if hasattr(vz, 'transform'):  # Check if it's a vectorizer
-        new_text_vectorized = vz.transform(input)  # Transform input
+    if hasattr(cv, 'transform'):  # Check if it's a vectorizer
+        new_text_vectorized = cv.transform(input)  # Transform input
     else:
         st.error("Vectorizer is not loaded properly. Please check the 'vz.pkl' file.")
         return "Error"
