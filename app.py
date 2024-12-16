@@ -29,11 +29,7 @@ def main():
     </div>
     '''
     st.markdown(html_temp, unsafe_allow_html=True)
-    # Add copyright notice
-    copyright_text = '''
-    <div style=width: 20%; text-align: center; padding: 12px; background-color: black'>
-    <p style='font-size: 14px;color:red'>© 2024 PAWAN YADAV (AI Engineer). All Rights Reserved.</p></div>'''
-    st.markdown(copyright_text, unsafe_allow_html=True)
+    
     # Input Box for user queries
     user_input = st.text_input('Enter Your Query')
 
