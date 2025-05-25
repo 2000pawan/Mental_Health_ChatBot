@@ -1,35 +1,80 @@
-This is a Mental Health ChatBot powered by machine learning, designed to provide support and insights on various mental health issues. 
+# 🧠 Mental Health ChatBot
 
-The chatbot predicts whether a user might be experiencing conditions like Stress, Depression, Bipolar disorder, Personality disorder, or Anxiety based on the text input provided. It then offers tailored advice and support to help users cope with their mental health challenges.
+A machine learning-powered **Mental Health ChatBot** designed to provide compassionate support and intelligent insights for individuals facing mental health challenges.  
+This interactive application helps users by predicting potential mental health conditions based on their text input and offering personalized coping strategies and resources.
 
-Features:
+---
 
-Predicts Mental Health Conditions: The model identifies the likelihood of mental health issues from the input text.
+## 🌟 Key Features
 
-Personalized Support: Depending on the prediction, the chatbot provides personalized advice and guidance.
+- 🔍 **Mental Health Condition Prediction**  
+  Predicts the likelihood of conditions such as:
+  - Stress  
+  - Depression  
+  - Bipolar Disorder  
+  - Personality Disorder  
+  - Anxiety
 
-Interactive Web Interface: Built using Streamlit, making it easy for users to interact with the chatbot in real-time.
+- 💡 **Personalized Support & Advice**  
+  Delivers helpful suggestions and coping techniques tailored to the identified condition.
 
-Machine Learning Model: The chatbot uses a trained machine learning model, with vectorization techniques to process text data and classify the mental health issue.
+- 🖥️ **User-Friendly Web Interface**  
+  Built with **Streamlit**, allowing users to interact with the chatbot in real-time via a simple and intuitive interface.
 
-How It Works:
+- 🤖 **Powered by Machine Learning**  
+  Utilizes a trained ML classification model with text vectorization to analyze input and generate predictions.
 
-Text Input: Users enter text describing their feelings or symptoms.
+---
 
-Prediction: The model processes the input and predicts whether the user might be experiencing Stress, Depression, Bipolar disorder, Personality disorder, or Anxiety.
+## ⚙️ How It Works
 
-Supportive Response: Based on the prediction, the chatbot provides supportive tips and guidance to help the user cope.
+1. **User Input**  
+   The user types a message describing their emotions or mental state.
 
-Technologies Used:
+2. **Prediction Engine**  
+   The machine learning model processes the input and classifies it into one of the predefined mental health categories.
 
-Python: For developing the application and machine learning model.
+3. **Response Generator**  
+   Based on the predicted category, the chatbot provides customized guidance and mental health tips to support the user.
 
-Streamlit: For building the interactive web app.
+---
 
-Joblib: For loading the trained machine learning model and vectorizer.
+## 🛠️ Tech Stack
 
-PIL: For handling image inputs and displaying images in the app.
+- **Python** – Backend logic and ML model implementation  
+- **Streamlit** – Interactive web app framework  
+- **scikit-learn** – Machine learning model training and evaluation  
+- **Joblib** – Efficient model and vectorizer loading  
+- **PIL (Pillow)** – Image handling for UI enhancement
+
+---
+
+## 🚀 Getting Started
+
+### 🔧 Installation
+
+1. **Clone the repository**
+
+   ```bash
+    git clone https://github.com/your-username/mental-health-chatbot.git
+   cd mental-health-chatbot
+
+2. **Install dependencies**
+
+    ```bash
+    pip install -r requirements.txt
+
+3. **Run the app**
+
+    ```bash
+    streamlit run app.py
+
+### 👤 Author
+PAWAN YADAV
+
+### 📜 License
+All rights reserved © PAWAN YADAV
+You are welcome to use, modify, and contribute to this project with proper attribution.
 
 
-License:
-All rights reserved to PAWAN YADAV (AI Engineer). Feel free to use and contribute with proper attribution.
+
