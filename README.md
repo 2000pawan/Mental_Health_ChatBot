@@ -56,8 +56,8 @@ This interactive application helps users by predicting potential mental health c
 1. **Clone the repository**
 
    ```bash
-    git clone https://github.com/your-username/mental-health-chatbot.git
-   cd mental-health-chatbot
+    git clone https://github.com/2000pawan/Mental_Health_ChatBot.git
+    cd mental-health-chatbot
 
 2. **Install dependencies**
 
@@ -74,7 +74,6 @@ PAWAN YADAV
 
 ### 📜 License
 All rights reserved © PAWAN YADAV
-You are welcome to use, modify, and contribute to this project with proper attribution.
 
 
 
